@@ -38,8 +38,8 @@ class HomeNewVisitorTest(StaticLiveServerTestCase):
 
     def test_internationalization(self):
         for lang, h1_text in [('en', 'Welcome to TaskBuster!'),
-                              ('ca', 'Benvingut a TaskBuster!')]:
-            activate(lang)
+                              ('es-mx', 'Bienvenido a TaskBuster!')]:
+            activate(es-mx)
         self.browser.get(self.get_full_url("home"))
         h1 = self.browser.find_element_by_tag_name("h1")
         self.assertEqual(h1.text, h1_text)

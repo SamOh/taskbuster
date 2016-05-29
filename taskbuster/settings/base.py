@@ -96,7 +96,7 @@ DATABASES = {
 from django.utils.translation import ugettext_lazy as _
 LANGUAGES = (
     ('en', _('English')),
-    ('ca', _('Catalan')),
+    ('es-mx', _('Mexico Spanish')),
 )
 
 LOCALE_PATHS = (

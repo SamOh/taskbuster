@@ -1,0 +1,3 @@
+coverage==4.1
+Django==1.8
+selenium==2.53.2
