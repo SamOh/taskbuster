@@ -3,13 +3,14 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Sammy Oh -- developer? -- no twitter ;)
 
 # THANKS
 
-    <name>
+    Thanks to all
 
 # TECHNOLOGY COLOPHON
 
+    DJANGO!!
     HTML5, CSS3
     jQuery, Modernizr
