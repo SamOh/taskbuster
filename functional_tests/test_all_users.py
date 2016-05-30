@@ -6,20 +6,25 @@ from django.utils.translation import activate
 from datetime import date
 from django.utils import formats
  
+ ## COMMENT ALL TESTS
  
 class HomeNewVisitorTest(StaticLiveServerTestCase): 
  
+    # Checks that server runs on Firefox, waits for 3s
     def setUp(self):
         self.browser = webdriver.Firefox()
         self.browser.implicitly_wait(3)
         activate('en')
  
+    # Quit's browser once test is done
     def tearDown(self):
         self.browser.quit()
  
+    # Checks the url of server matches what is should be
     def get_full_url(self, namespace):
         return self.live_server_url + reverse(namespace)
  
+    #
     def test_home_title(self):
         self.browser.get(self.get_full_url("home"))
         self.assertIn("TaskBuster", self.browser.title)
