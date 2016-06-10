@@ -6,7 +6,7 @@ import dj_database_url
 
 DEBUG = True
 TEMPLATES[0]['OPTIONS']['debug'] = DEBUG
-SITE_ID = 3
+SITE_ID = 2
 ALLOWED_HOSTS_ = ['taskbuster-project.herokuapp.com']
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
