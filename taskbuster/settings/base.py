@@ -101,7 +101,7 @@ INSTALLED_APPS += (
     'allauth.socialaccount.providers.google',
 )
 
-SITE_ID = 1
+SITE_ID = 2
 
 ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_EMAIL_VERIFICATION = "none"
