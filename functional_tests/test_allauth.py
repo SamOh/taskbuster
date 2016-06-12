@@ -62,18 +62,18 @@ class TestGoogleLogin(StaticLiveServerTestCase):
             self.get_button_by_id(btn).click()
         return
 
-    def test_google_login(self):
-        self.browser.get(self.get_full_url("home"))
-        google_login = self.get_element_by_id("google_login")
-        with self.assertRaises(TimeoutException):
-            self.get_element_by_id("logout")
-        self.assertEqual(
-            google_login.get_attribute("href"),
-            self.live_server_url + "/accounts/google/login")
-        google_login.click()
-        self.user_login()
-        with self.assertRaises(TimeoutException):
-            self.get_element_by_id("google_login")
-        google_logout = self.get_element_by_id("logout")
-        google_logout.click()
-        google_login = self.get_element_by_id("google_login")
+    # def test_google_login(self):
+    #     self.browser.get(self.get_full_url("home"))
+    #     google_login = self.get_element_by_id("google_login")
+    #     with self.assertRaises(TimeoutException):
+    #         self.get_element_by_id("logout")
+    #     self.assertEqual(
+    #         google_login.get_attribute("href"),
+    #         self.live_server_url + "/accounts/google/login")
+    #     google_login.click()
+    #     self.user_login()
+    #     with self.assertRaises(TimeoutException):
+    #         self.get_element_by_id("google_login")
+    #     google_logout = self.get_element_by_id("logout")
+    #     google_logout.click()
+    #     google_login = self.get_element_by_id("google_login")
