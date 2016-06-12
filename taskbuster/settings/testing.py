@@ -11,7 +11,7 @@ DATABASES = {
         'USER': get_env_variable('DATABASE_USER'),
         'PASSWORD': get_env_variable('DATABASE_PASSWORD'),
         'HOST': '127.0.0.1',
-        'PORT': '',
+        'PORT': '5434',
     }
 }
 
