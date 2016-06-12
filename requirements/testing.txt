@@ -2,3 +2,4 @@
 selenium==2.53.2
 coverage==4.1
 defusedxml==0.4.1
+django_rest_tools=1.1
