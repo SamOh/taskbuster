@@ -5,14 +5,14 @@
 
 Welcome to TaskBuster's documentation!
 ======================================
- 
+
 This is an awesome **Django Project Boilerplate**!!
- 
-With this code you can start a *complex* Django Project 
+
+With this code you can start a *complex* Django Project
 very quickly, with just a few steps!
- 
+
 Some of the TaskBuster Django Project Boilerplate functionalities are:
- 
+
 - **different virtual environments** for developing, testing and production
 - **Internationalization** and **localization** to support different languages
 - Project structure
@@ -20,32 +20,36 @@ Some of the TaskBuster Django Project Boilerplate functionalities are:
 - Template Inheritance
 - Functional **tests**
 - robots.txt and humans.txt configured
- 
+
 Moreover, you can learn how to create this boilerplate **step by step**
-in the |taskbuster_tutorial|. There you can learn, step by step, how 
+in the |taskbuster_tutorial|. There you can learn, step by step, how
 TaskBuster has been done, and even do it yourself if you want to!!
- 
+
 .. |taskbuster_tutorial| raw:: html
- 
-    <a href="http://marinamele.com/taskbuster-django-tutorial" 
+
+    <a href="http://marinamele.com/taskbuster-django-tutorial"
     target="_blank">TaskBuster Django Tutorial</a>
- 
-To start using the Boilerplate, check out the :doc:`requirements` 
+
+To start using the Boilerplate, check out the :doc:`requirements`
 and next the :doc:`quick_start`.
- 
+
+Also, setup for codeship. Hypothesis is that when a pull request is made,
+after it is looked over and merged, Codeship CI will run the full suite of
+tests to make sure they pass before actually merging.
+
 Contents
 --------
- 
+
 .. toctree::
    :maxdepth: 2
- 
+
    requirements
    quick_start
- 
- 
+
+
 Indices and tables
 ==================
- 
+
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
