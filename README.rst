@@ -5,52 +5,26 @@
 
 Welcome to TaskBuster's documentation!
 ======================================
-
-This is an awesome **Django Project Boilerplate**!!
-
-With this code you can start a *complex* Django Project
-very quickly, with just a few steps!
-
-Some of the TaskBuster Django Project Boilerplate functionalities are:
-
-- **different virtual environments** for developing, testing and production
-- **Internationalization** and **localization** to support different languages
-- Project structure
-- **HTML5 Boilerplate**
-- Template Inheritance
-- Functional **tests**
-- robots.txt and humans.txt configured
-
-Moreover, you can learn how to create this boilerplate **step by step**
-in the |taskbuster_tutorial|. There you can learn, step by step, how
-TaskBuster has been done, and even do it yourself if you want to!!
-
-.. |taskbuster_tutorial| raw:: html
-
-    <a href="http://marinamele.com/taskbuster-django-tutorial"
-    target="_blank">TaskBuster Django Tutorial</a>
-
-To start using the Boilerplate, check out the :doc:`requirements`
-and next the :doc:`quick_start`.
-
-Also, setup for codeship. Hypothesis is that when a pull request is made,
-after it is looked over and merged, Codeship CI will run the full suite of
-tests to make sure they pass before actually merging.
-
-Contents
---------
-
-.. toctree::
-   :maxdepth: 2
-
-   requirements
-   quick_start
+Below I'll provide a quick overview of the project, its purpose, a list of some interesting tech I learned/used in the creation of this project, and some credits.
 
 
-Indices and tables
-==================
+Project
+-------
+This project is a task manager created using Django. A user can create an account (through gmail google sign in), login, and then manage different to-do lists on their account.
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+Purpose
+-------
+The purpose of creating this project was mainly to get my hands dirty using new technologies and frameworks that I was otherwise unfamiliar with. Much of this project is directly an extension of Marina Mele's [django tutorial](http://www.marinamele.com/taskbuster-django-tutorial/taskbuster-working-environment-and-start-django-project).
 
+Tech
+----
+An incomplete list of some of the new tech I dealt with in the creation of this project is:
+Django/python
+PostgreSQL
+Codeship
+Heroku
+Docker
+
+Credits
+-------
+Huge credits go to Marina Mele for her [django tutorial](http://www.marinamele.com/taskbuster-django-tutorial/taskbuster-working-environment-and-start-django-project).
