@@ -9,3 +9,4 @@ taskbuster/staticfiles/css
 taskbuster/staticfiles/fonts
 taskbuster/staticfiles/js
 taskbuster/staticfiles/misc
+*/.DS_Store

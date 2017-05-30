@@ -1,13 +1,12 @@
 # humanstxt.org/
-# The humans responsible & technology colophon
 
 # TEAM
 
-    Sammy Oh -- developer? -- no twitter ;)
+    Sammy Oh -- developer
 
 # THANKS
 
-    Thanks to all
+    Thanks to Marina Mele for offering the initial boilerplate/tutorial
 
 # TECHNOLOGY COLOPHON
 
