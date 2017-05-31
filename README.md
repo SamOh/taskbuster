@@ -14,7 +14,7 @@ This project is a task manager created using Django. A user can create an accoun
 
 Purpose
 -------
-The purpose of creating this project was mainly to get my hands dirty using new technologies and frameworks that I was otherwise unfamiliar with. Much of this project is directly an extension of Marina Mele's [django tutorial](http://www.marinamele.com/taskbuster-django-tutorial/taskbuster-working-environment-and-start-django-project).
+The purpose of creating this project was mainly to get my hands dirty using new technologies and frameworks that I was otherwise unfamiliar with. Much of this project is directly an extension of Marina Mele's [django tutorial](http://www.marinamele.com/taskbuster-django-tutorial/taskbuster-working-environment-and-start-django-project). 
 
 Tech
 ----
