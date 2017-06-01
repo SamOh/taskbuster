@@ -11,7 +11,7 @@
     <div class="container">
       <h1>{% trans "Welcome to TaskBuster!"%}</h1>
       <p>{% blocktrans %}TaskBuster is a simple Task manager that helps you organize your daylife. </br> You can create todo lists, periodic tasks and more! </br></br> To learn more about taskbuster or use the application, click the blue button below!{% endblocktrans %}</p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      <p><a class="btn btn-primary btn-lg" href="{% url 'taskmanager:home' %}" role="button">Learn More &raquo;</a></p>
     </div>
   </div>
 
@@ -20,13 +20,11 @@
     <div class="row">
         <div class="col-md-4">
             <h2 id="local-date">{{today}}</h2>
-                <p>This is the date using your local information </p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                <p>This is the date using your local information. The date is just here to test out how to use list the current date on a website. </p>
         </div>
         <div class="col-md-4">
             <h2 id="non-local-date">{{today|unlocalize}}</h2>
-                <p>This is the default time format.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                <p>Again, just testing out the date here and some different time zones in the following column</p>
         </div>
 
         <div class="col-md-4">
@@ -35,7 +33,6 @@
                 <p> UTC: <span id="time-utc">{{now|utc|time:"H:i"}}</span></p>
                 <p> New York: <span id="time-ny">
                        {{now|timezone:"America/New_York"|time:"H:i"}}</span></p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
     </div>
   </div> <!-- /container -->
