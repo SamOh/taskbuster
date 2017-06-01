@@ -117,3 +117,15 @@ class Tag(models.Model):
 
     def __str__(self):
         return "%s - %s" % (self.user, self.name)
+
+
+class Task(models.Model):
+    # Relations
+    user = models.ForeignKey(
+        Profile
+    )
+
+    # Attributes
+    title = models.CharField(max_length=100)
+    description = models.CharField(max_length=1000)
+    status = models.BooleanField(default=False)

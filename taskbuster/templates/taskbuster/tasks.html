@@ -6,5 +6,49 @@
 {% load tz %}
 
 {% block content %}
-hi this is just a simple test!
+<br><br>
+<table class="table table-striped table-hover ">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Task Title</th>
+      <th>Description</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>
+        <div class="form-group">
+          <input class="form-control" id="titleinput" type="text">
+        </div>
+      </td>
+      <td>
+        <div class="form-group">
+          <input class="form-control" id="descriptioninput" type="text">
+        </div>
+      </td>
+      <td>
+        <div class="btn-group">
+            {% url 'taskmanager:add_task' as the_url %}
+            <form action="{{the_url}}" method="post">
+            {% csrf_token %}
+              <button id='addtask' class="btn btn-primary" type="submit" style="font-size: 15px;">
+                Add
+              </button>
+            </input>
+            </form>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{% endblock %}
+{% block footer %}
+<h3>Progress</h3>
+<div class="progress">
+  <div class="progress-bar progress-bar-success" style="width: 35%"></div>
+  <div class="progress-bar progress-bar-warning" style="width: 20%"></div>
+  <div class="progress-bar progress-bar-danger" style="width: 10%"></div>
+</div>
 {% endblock %}
